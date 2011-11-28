@@ -4,9 +4,6 @@ import java.util.ResourceBundle;
 
 import org.junit.Test;
 import org.lmarin.commons.utils.i18n.ResourceBundleProxy;
-import org.lmarin.commons.utils.i18n.annotations.ResourceBundlePropertiesGenerable;
-import org.lmarin.commons.utils.i18n.annotations.ResourcesBundleKey;
-import org.lmarin.commons.utils.i18n.annotations.ResourcesBundleValue;
 
 public class ResourceBundleProxyTest {
 
@@ -18,11 +15,9 @@ public class ResourceBundleProxyTest {
 //		System.out.println(instance.getAnnee());
 	}
 	
-	@ResourceBundlePropertiesGenerable
 	private interface QuesterImperialRb {
 		
-		@ResourcesBundleKey
-		String title(@ResourcesBundleValue("1.0.0-SNAPSHOT") String version);		
+		String title( String version);		
 		
 		String getName();
 		Integer getAnnee();
