@@ -16,11 +16,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * 
+ * A capped cache which allow concurrent access. This class is experimental.
  * @author Jean-Pascal THIERY
  *
- * @param <K>
- * @param <V>
+ * @param <K> key Type
+ * @param <V> value Type
  */
 public class ConcurrentCache<K, V>  {
 	
