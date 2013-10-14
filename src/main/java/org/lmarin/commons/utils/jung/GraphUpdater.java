@@ -8,6 +8,13 @@ import edu.uci.ics.jung.algorithms.layout.AbstractLayout;
 import edu.uci.ics.jung.algorithms.layout.util.Relaxer;
 import edu.uci.ics.jung.graph.Graph;
 
+/**
+ * Allow to update Graph model in good conditions using {@link Relaxer}, running in EDT.
+ * @author Jean-Pascal THIERY
+ *
+ * @param <V> Vertice type
+ * @param <E> Edge type
+ */
 public class GraphUpdater<V, E> {
 
 	private final Graph<V, E> graph;
@@ -33,6 +40,10 @@ public class GraphUpdater<V, E> {
 		this.relaxer = relaxer;
 	}
 
+	/**
+	 * Execute a bulk of update on graph model.
+	 * @param commands List of command to done on one shot.
+	 */
 	public final void executeUpdate(final List<GraphCommandUpdater<V, E>> commands) {
 		Runnable cmd = new Runnable() {
 			@Override

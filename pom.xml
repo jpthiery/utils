@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>lmarin-parent</artifactId>
 		<groupId>org.lmarin</groupId>
-		<version>0.0.3-SNAPSHOT</version>
+		<version>0.0.4-SNAPSHOT</version>
 	</parent>
 
 	<name>lmarin commons utils</name>
@@ -36,6 +36,11 @@
 			<artifactId>commons-beanutils</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.neo4j</groupId>
 			<artifactId>neo4j</artifactId>
