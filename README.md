@@ -1,4 +1,4 @@
-lmarin-utils
+Utils
 ============
 
-utils class used in my projects
+Utils class used in my projects
